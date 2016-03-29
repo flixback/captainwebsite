@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Flixback</title>
+    <title>Captain Feedback by Flixback</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,13 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript">
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+	  analytics.load("DxnvYjNDoFOInDV0y9v66M4gGE77DCGg");
+	  analytics.page()
+	  }}();
+	</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +39,7 @@
 </head>
 
 <body id="page-top" class="index">
-
+	<div class="corner-ribbon bottom-left sticky red shadow">ALPHA</div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -80,7 +87,7 @@
 						<hr class="star-light">
                         <span class="name">Feedback bot for slack</span>
                     </div>
-					<a class="btn btn-blue btn-lg" target="_blank" href="http://captainfeedback-flixback.rhcloud.com/login" role="button"><i class="fa fa-slack"></i>Add to Slack</a>
+					<a class="btn btn-blue btn-lg" target="_blank" href="http://captainfeedback-flixback.rhcloud.com/login" role="button" onclick="analytics.track('Clicked on Install');"><i class="fa fa-slack"></i>Add to Slack</a>
                 </div>
             </div>
         </div>
@@ -109,8 +116,8 @@
                 <div class="col-lg-12">
                     <h2><i class="fa fa-slack"></i>3 - Engage with us on our Slack team a.k.a The Tavern</h2>
                     <hr class="star-primary">
-					<a target="_blank" href="http://captainfeedback-flixback.rhcloud.com/login"><img class="img-responsive center-block" src="http://i.giphy.com/SW3PNayoSGXao.gif" alt=""></a>
-					<br><a class="btn btn-blue btn-lg" target="_blank" href="https://metacaptainfeedback.slack.com" role="button"><i class="fa fa-slack"></i>Take me there please!</a>
+					<img class="img-responsive center-block" src="http://i.giphy.com/lMVNl6XxTvXgs.gif" alt="">
+					<br><a class="btn btn-blue btn-lg" target="_blank" href="https://thecaptainfeedbacktavern.herokuapp.com/" role="button"><i class="fa fa-slack"></i>Take me there please!</a>
 					<br>
                 </div>
             </div>			
@@ -190,7 +197,6 @@
         </a>
     </div>
 
-    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
